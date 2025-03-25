@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP PACK</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS for Carousel -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="assets/logo2.png" alt="TOP PACK Logo"></a>
+                <div class="company-info">
+                    <h6 class="company-text">Top Pack Co.</h6>
+                    <h6 class="company-text">For Paper and Plastic Products</h6>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons ml-lg-2 mt-2 mt-lg-0">
+                <a href="#" class="btn btn-danger rounded-0">Shop Now</a>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #fff;
+            height: 130px;
+        }
+    
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+    
+        .logo img {
+            max-width: 200px;
+            height: auto;
+        }
+    
+        .company-info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+        }
+    
+        .company-text {
+            color: red;
+            white-space: nowrap;
+            margin: 2px 0;
+        }
+    
+        .menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .menu li {
+            margin: 0 15px;
+        }
+    
+        .menu li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+    <!-- Hero Section (Slider Background) -->
+<br>
+<section>
+    <br>
+</section>
+    <section class="intro py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side (Text) -->
+                <div class="col-md-6">
+                    <h2>About</h2>
+                    <p>Top pack co. Established in 2016 in Kuwait, Top Pack Company has emerged as a prominent
+                        manufacturer and distributor of premium paper and plastic food packaging solutions. Committed to
+                        innovation, sustainability, and excellence, the company prioritizes quality, hygiene, and
+                        customer satisfaction, aiming to provide packaging that not only enhances food presentation but
+                        also ensures safety and convenience.
+                    </p>
+                    <br>
+                    <p>Top Pack consistently invests in cutting-edge technologies and sustainable materials to offer
+                        clients reliable and cost-effective packaging options. The company boasts a skilled team provide
+                        innovative ideas, and strict quality assurance. Top Pack focuses intently on producing all goods
+                        to foster trust among clients, supported by a global network of suppliers.</p>
+
+                    <!-- Hidden Content -->
+                    <p id="moreContent" class="d-none">
+                        
+                        With two manufacturing facilities in Kuwait, the company is devoted to delivering high-quality
+                        products, exceptional service, competitive pricing, and prompt delivery, thereby establishing
+                        long-term and robust relationships with customers in the region.
+                        Top Pack specializes in customized printed packaging, offering a wide array of tailored
+                        eco-friendly products designed to meet the specific needs of restaurants, cafes, bakeries, and
+                        food service businesses.
+                        Their product range providing high-quality and sustainable food packaging solutions.
+                    </p>
+                    <!-- Read More Button -->
+                    <button id="readMoreBtn" class="btn btn-danger">Read More</button>
+                    <script>
+                        document.getElementById("readMoreBtn").addEventListener("click", function () {
+                            let moreContent = document.getElementById("moreContent");
+
+                            if (moreContent.classList.contains("d-none")) {
+                                moreContent.classList.remove("d-none");
+                                this.innerText = "Read Less"; // Change button text
+                            } else {
+                                moreContent.classList.add("d-none");
+                                this.innerText = "Read More"; // Reset button text
+                            }
+                        });
+                    </script>
+                </div>
+                <!-- Right Side (Image Slider) -->
+                <div class="col-md-6">
+                    <div id="propertySlider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/fact.jpg" class="d-block w-100" alt="Image 1"
+                                    style="width: 800px; height: 400px; object-fit: cover;padding-top: 10px;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/fact2.jpg" class="d-block w-100" alt="Image 2"
+                                    style="width: 800px; height: 400px; object-fit: cover;padding-top: 10px;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/fact3.jpg" class="d-block w-100" alt="Image 3"
+                                    style="width: 800px; height: 400px; object-fit: cover;padding-top: 10px;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#propertySlider"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#propertySlider"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <style>
+        .intro .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .intro .col-md-6 {
+            flex: 1;
+        }
+
+        .intro h2 {
+            font-size: 32px;
+            color: #d71920;
+            font-weight: bold;
+        }
+
+        .intro p {
+            font-size: 16px;
+            color: #444;
+            max-width: 500px;
+        }
+
+        .intro .carousel {
+            max-width: 500px;
+            margin-left: auto;
+        }
+
+        .diagonal-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent);
+            top: 0;
+            left: 0;
+        }
+
+        @media (min-width: 992px) {
+            .intro .container {
+                flex-direction: row;
+            }
+
+            .intro .col-md-6 {
+                max-width: 50%;
+            }
+
+            .intro .carousel {
+                max-width: 500px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .intro .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .intro .col-md-6 {
+                max-width: 100%;
+            }
+
+            .intro .carousel {
+                max-width: 100%;
+                margin: auto;
+            }
+
+            .intro p {
+                max-width: 100%;
+            }
+
+            .intro h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+    <!-- Products Section -->
+    <br>
+    <section>
+        <br>
+    </section>
+    <style>
+        .mission-vision {
+            background-color: #f5f5f5;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            background: #d71920;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .tab-btn.active {
+            background: #f80d15;
+        }
+
+        .content-box {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(22, 21, 21, 0.863);
+            text-align: left;
+            max-width: 900px;
+            margin: 0 auto;
+            transition: 0.3s ease-in-out;
+        }
+
+        .content-box img {
+            width: 120px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #d71920;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #444;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+<section>
+    <br>
+    <br>
+</section>
+    <section class="mission-vision">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showContent('mission')">Our Mission</button>
+                <button class="tab-btn" onclick="showContent('vision')">Our Vision</button>
+            </div>
+            <div id="mission" class="content-box">
+                <img src="assets/mission.png" alt="Mission Icon">
+                <div class="text-content">
+                    <h2>Our Mission</h2>
+                    <p>At Top Pack we understand that packaging is the bridge between food manufacturers and consumers.
+                        It is our responsibility to ensure that this bridge is strong, reliable, and environmentally
+                        conscious.
+                        We continue to invest in research and development, adopting the latest technologies to create
+                        packaging
+                        solutions that are not only functional but also eco-friendly.</p>
+                </div>
+            </div>
+            <div id="vision" class="content-box hidden">
+                <img src="assets/vision.png" alt="Vision Icon">
+                <div class="text-content">
+                    <h2>Our Vision</h2>
+                    <p>At Top Pack, our vision is to set the standard for innovation and quality in the disposable food
+                        packaging
+                        industry. Since our inception in 2016, we have dedicated ourselves to providing high-quality,
+                        customizable
+                        plastic solutions that meet the unique needs of our diverse customer base.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function showContent(section) {
+            document.getElementById('mission').classList.add('hidden');
+            document.getElementById('vision').classList.add('hidden');
+
+            document.getElementById(section).classList.remove('hidden');
+
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+    <!-- Brands -->
+    <div class="slider-container2">
+        <button class="slider-nav-button left" onclick="scrollSlider(-1)">&#10094;</button>
+        <div class="slider">
+            <div class="slide">
+                <img src="assets/logo.jpg" alt="Industry 1">
+
+            </div>
+            <div class="slide">
+                <img src="QP1.jpg" alt="Industry 2">
+            </div>
+            <div class="slide">
+                <img src="QH.jpg" alt="Industry 3">
+            </div>
+            <div class="slide">
+                <img src="RoyalEagle.png" alt="Industry 4">
+            </div>
+            <div class="slide">
+                <img src="TP.jpg" alt="Industry 5">
+            </div>
+        </div>
+        <button class="slider-nav-button right" onclick="scrollSlider(1)">&#10095;</button>
+    </div>
+    <hr style="width: 900px;margin-left: 200px;color: #0e0d0d;">
+    <br>
+    <script>
+        const slider = document.querySelector('.slider');
+
+        function scrollSlider(direction) {
+            const scrollAmount = 270; // Adjust scroll amount
+            slider.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+        }
+    </script>
+    <style>
+        .slider-container2 {
+            position: relative;
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .slide {
+            min-width: 300px;
+            height: 250px;
+            background: #fff;
+            border-radius: 1px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .slide img {
+            width: 300;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .slide h3 {
+            margin-top: 1px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .slider-nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .slider-nav-button.left {
+            left: 0;
+        }
+
+        .slider-nav-button.right {
+            right: 0;
+        }
+    </style>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Address</h4>
+                <p> BLOCK: 8, Street: 84, Building No:210,Subhan Industrial Area,<br>
+                    KUWAIT.</p>
+                <p>Phone: +965222270570<br>
+                    Email: <a href="mailto:info@toppackkw.com">info@toppackkw.com</a></p>
+                <p>Working hours: 8AM-5:00PM | Sat-Thus</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Top Pack, All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer CSS -->
+    <style>
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+            min-width: 250px;
+        }
+
+        .footer-section h4 {
+            border-bottom: 2px solid #777;
+            padding-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 10px 0;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-section form input,
+        .footer-section form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .footer-section form button {
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer-section form button:hover {
+            background-color: #777;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+        }
+    </style>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

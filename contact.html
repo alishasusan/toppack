@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP PACK</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS for Carousel -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="assets/logo2.png" alt="TOP PACK Logo"></a>
+                <div class="company-info">
+                    <h6 class="company-text">Top Pack Co.</h6>
+                    <h6 class="company-text">For Paper and Plastic Products</h6>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons ml-lg-2 mt-2 mt-lg-0">
+                <a href="#" class="btn btn-danger rounded-0">Shop Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #fff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .company-info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+        }
+
+        .company-text {
+            color: red;
+            white-space: nowrap;
+            margin: 2px 0;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+    <!-- bgimg -->
+    <!-- <section> 
+        <img src="assets/contactus.jpg" style="height: 420px;width: 1100px;" class="d-block w-100" alt="Image 1">
+        
+    </section> -->
+
+    <section>
+        <img src="contactus.jpg" style="height: 450px;width: 600px;" class="d-block w-100" alt="Image 1">
+
+        <div class="carousel-caption">
+            <h1
+                style="color:black;margin-left: 10px;margin-bottom: 295px;border-width: 0cap;font-style: italic-bold;font-size: 75px;">
+                Contact Us</h1>
+        </div>
+    </section>
+    <!-- <section>
+        <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+            <div class="position-relative h-100">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4136.927173127612!2d47.9404837783417!3d29.31967595446858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9bef44dca79b%3A0xdfa00a00453d653c!2sTop%20Pak!5e0!3m2!1sen!2skw!4v1742041714736!5m2!1sen!2skw"
+                    width="1300" height="450" style="border: 20px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+        <div class="container my-5 property-form">
+            <form enctype="multipart/form-data" method="post" action="upload_handler.php">
+                <div class="form-section">
+                    <h2 class="text-center mb-4">Feel free to contact us</h2>
+                    <div class="row">
+                      
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="FirstName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="LastName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="Email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="tel" id="phoneNumber" name="PNumber" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="Message" class="form-control" rows="4" required></textarea>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-danger">Submit</button>
+                            </div>
+                        </div>
+        
+                     
+                        <div class="col-md-6">
+                            <h2>Contact Information</h2>
+                            <div class="contact-info">
+                                <div class="d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                        <path d="M480-301q99-80 149.5-154T680-594q0-90-56-148t-144-58q-88 0-144 58t-56 148q0 65 50.5 139T480-301Zm0 101Q339-304 269.5-402T200-594q0-125 78-205.5T480-880q124 0 202 80.5T760-594q0 94-69.5 192T480-200Zm0-320q33 0 56.5-23.5T560-600q0-33-23.5-56.5T480-680q-33 0-56.5 23.5T400-600q0 33 23.5 56.5T480-520ZM200-80v-80h560v80H200Zm280-520Z" />
+                                    </svg>
+                                    <p class="ms-2">PLOT: 22, BLOCK: 3, </p>
+                                </div>
+                                <br>
+        
+                                <div class="d-flex align-items-center mt-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                        <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                                    </svg>
+                                    <p class="ms-2"><a href="mailto:info@toppackkw.com">info@toppackkw.com</a></p>
+                                </div>
+                               <br>
+        
+                                <div class="d-flex align-items-center mt-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                        <path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                                    </svg>
+                                    <p class="ms-2">+965 2222 70570</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+
+    </section> -->
+    <hr>
+
+
+
+    <!-- Hero Section (Slider Background) -->
+    <div class="container">
+        <div class="contact-form-section">
+            <h1 style="color: rgb(105, 58, 233);">Contact Us</h1>
+            <br>
+            <span>Whether you have a question about our products, pricing;</span>
+            <span> we are here to help you with all inquiries specific to your business.</span>
+            <br>
+            <br>
+            <h4 style="color: rgb(209, 49, 49);">Address</h4>
+            <br>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323">
+                <path
+                    d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+            </svg>
+            PLOT: 22, BLOCK: 3,
+            <p> Subhan Industrial Area,</p>
+            <p> KUWAIT.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323">
+                <path
+                    d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+            </svg>
+            Phone: +965222270570<br>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323">
+                <path
+                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+            </svg>
+            Email: <a href="mailto:info@toppackkw.com">info@toppackkw.com</a></p>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323">
+                <path
+                    d="M160-200v-440 440-15 15Zm0 80q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v171q-18-13-38-22.5T800-508v-132H160v440h283q3 21 9 41t15 39H160Zm240-600h160v-80H400v80ZM720-40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40Zm20-208v-112h-40v128l86 86 28-28-74-74Z" />
+            </svg>
+            <tr></tr>Working hours: 8AM-5:00PM | Sat-Thus</p>
+        </div>
+
+        <div class="map-section">
+            <h2>Our Location</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d870.4893533233395!2d48.00708161424928!3d29.22480713845157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2skw!4v1742373675228!5m2!1sen!2skw"
+                width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <br>
+    <section>
+        <div class="container">
+            <div class="map-section">
+                
+                <img src="tp4.jpg" alt="" style="height: 400px;">
+                <br>
+                <h6>TOP PACK SHOWROOM
+                </h6>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#EA3323">
+                    <path
+                        d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                </svg>
+                <span style="color: #8714f3;">Al-Tamour Street
+                </span>
+                <br>
+                <span style="color: #8714f3;">Shuwaikh Industrial Area
+                </span>
+            </div>
+            <div class="contact-form-section">
+                <h1 style="color: #dd1212; margin-left: 100px;">Get In Touch</h1>
+                <form class="contact-form">
+                    <div class="form-columns">
+                        <!-- Left Column -->
+                        <div class="form-left">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="phoneno">Phone No</label>
+                            <input type="text" id="phoneno" name="phoneno" required>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="form-right">
+
+                        </div>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-form-section">
+                
+            </div>
+
+
+        </div>
+    </section>
+    <section>
+        <div class="container-2">
+           
+
+        </div>
+    </section>
+
+    <style>
+        .container-2 {
+            display: flex;
+            justify-content: center;
+            width: 95%;
+            max-width: 1200px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form-section {
+            flex: 1;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-columns {
+            display: flex;
+            gap: 20px;
+            /* Space between columns */
+        }
+
+        .form-left,
+        .form-right {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .contact-form label {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .contact-form button {
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #dd1212;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            width: 250px;
+            align-self: center;
+        }
+
+        .contact-form button:hover {
+            background-color: #111111;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .form-columns {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 95%;
+            max-width: 1200px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form-section {
+            flex: 1;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            margin-left: 100px;
+        }
+
+        .contact-form label {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 500px;
+            margin-left: 100px;
+        }
+
+        .contact-form button {
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #dd1212;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #111111;
+        }
+
+        .map-section {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .map-section iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .contact-form-section,
+            .map-section {
+                width: 100%;
+            }
+        }
+    </style>
+
+
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Address</h4>
+                <p>PLOT: 22, BLOCK: 3, Subhan Industrial Area,<br>
+                    KUWAIT.</p>
+                <p>Phone: +965222270570<br>
+                    Email: <a href="mailto:info@toppackkw.com">info@toppackkw.com</a></p>
+                <p>Working hours: 8AM-5:00PM | Sat-Thus</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Top Pack, All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer CSS -->
+    <style>
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+            min-width: 250px;
+        }
+
+        .footer-section h4 {
+            border-bottom: 2px solid #777;
+            padding-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 10px 0;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-section form input,
+        .footer-section form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .footer-section form button {
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer-section form button:hover {
+            background-color: #777;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+        }
+    </style>
+    <br>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
